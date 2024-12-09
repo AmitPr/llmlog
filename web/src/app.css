@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.subdued {
+		@apply text-gray-500;
+	}
+
+	.dark {
+		@apply bg-gray-900 text-gray-100;
+	}
+}
+
+#editor {
+	@apply rounded-md;
+	/* Headings */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-semibold leading-tight;
+	}
+
+	h1 {
+		@apply text-4xl;
+	}
+	h2 {
+		@apply text-3xl;
+	}
+	h3 {
+		@apply text-2xl;
+	}
+	h4 {
+		@apply text-xl;
+	}
+	h5 {
+		@apply text-lg;
+	}
+	h6 {
+		@apply text-base;
+	}
+
+	/* Lists */
+	ul,
+	ol {
+		@apply list-outside ml-4 my-2;
+	}
+
+	/* Base unordered list */
+	ul {
+		@apply list-disc;
+	}
+	> ol {
+	}
+
+	/* First level ordered list */
+	ol {
+		@apply list-decimal;
+	}
+
+	/* Second level ordered list - alphabetical */
+	ol ol {
+		@apply list-[lower-alpha];
+	}
+
+	/* Third level - roman */
+	ol ol ol {
+		@apply list-[lower-roman];
+	}
+
+	/* Fourth level - decimal */
+	ol ol ol ol {
+		@apply list-decimal;
+	}
+
+	/* Reduce spacing between list items */
+	li {
+		@apply -mt-1;
+	}
+
+	/* Paragraphs */
+	p {
+		@apply my-2 leading-relaxed;
+	}
+
+	/* Links */
+	a {
+		@apply text-blue-600 hover:text-blue-800 underline;
+	}
+
+	/* Blockquotes */
+	blockquote {
+		@apply pl-2 border-l-4 border-gray-700 italic text-gray-700;
+		> * {
+			@apply my-0;
+		}
+	}
+
+	/* Code blocks - dark mode */
+	pre {
+		@apply bg-gray-900 rounded p-2 overflow-x-auto my-2 text-gray-100;
+	}
+
+	/* Inline code - dark mode */
+	code:not(pre code) {
+		@apply bg-gray-900 text-gray-100 rounded px-1.5 py-0.5 font-mono;
+	}
+
+	/* Tables */
+	table {
+		@apply w-full border-collapse my-2;
+	}
+
+	th,
+	td {
+		@apply border border-gray-700 px-3 py-1;
+	}
+
+	th {
+		@apply bg-gray-400 font-semibold;
+	}
+
+	/* Horizontal rule */
+	hr {
+		@apply my-4 border-t border-gray-500 mx-2;
+	}
+
+	/* Images */
+	img {
+		@apply max-w-full h-auto my-2 rounded;
+	}
+
+	/* Strong and emphasis */
+	strong {
+		@apply font-bold;
+	}
+
+	em {
+		@apply italic;
+	}
+}

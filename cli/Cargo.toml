@@ -1,0 +1,19 @@
+[package]
+name = "llmlog"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ollama-rs = { version = "0.2.1", features = ["stream"] }
+clap = { version = "4.5.23", features = ["derive"] }
+color-eyre = "0.6.3"
+git2 = "0.19.0"
+serde = { version = "1.0.215", features = ["derive"] }
+tokio = { version = "1.42.0", features = ["full"] }
+tokio-stream = "0.1.17"
+serde_json = "1.0.133"
+reqwest = "0.12.9"
+schemars = "0.8.21"
+ignore = "0.4.23"
+url = "2.5.4"
+open = "5.3.1"
