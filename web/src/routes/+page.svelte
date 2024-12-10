@@ -9,7 +9,7 @@
 			<h2 class="text-2xl font-semibold text-gray-400"># Quick Start</h2>
 			<div>
 				<p class="text-gray-400"># Install the CLI</p>
-				<p>cd llmlog && cargo install llmlog</p>
+				<p>cd llmlog && cargo install --path .</p>
 			</div>
 			<div>
 				<p class="text-gray-400"># Generate a changelog</p>
